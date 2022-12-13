@@ -76,4 +76,32 @@ else:
     print(ms)
 ```
 
+## Question 4: Newton's family
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670934432469/WKdff1eHq.png align="center")
+
+## Solution:
+
+```python
+n=int(input())
+l=list(map(int,input().split()))
+d ={}
+for i in l:
+    if i in d :
+        d[i] = d[i]+1
+     
+    else:
+        d[i]=1
+      
+
+for i in range(1,n+1):
+    if i in d:
+        pass
+    else :
+        d[i]=0
+        
+for i in range(1,n+1):
+    print(d[i])
+```
+
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
