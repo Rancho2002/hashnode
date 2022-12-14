@@ -2,6 +2,10 @@
 
 If you are new to this challenge, first of all, join [Newton School Official Discord Server](https://bit.ly/3hc9GsX) and get started with it. Awesome prizes are awaiting you. Use this blog as a reference for those who face problems while solving the questions. Don't forget to share it with your peers. 😊
 
+### Language Used:
+
+Python 🐍 <img src="https://icons8.com/icon/13441/python" alt="python" width="200"/>
+
 ### Contents:
 
 1.  Tell Date
