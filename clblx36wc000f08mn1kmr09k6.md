@@ -4,7 +4,7 @@ If you are new to this challenge, first of all, join [Newton School Official Dis
 
 ### Language Used:
 
-Python 🐍 ![python](https://skillicons.dev/icons?i=python)
+ ![python](https://skillicons.dev/icons?i=python)
 
 ### Contents:
 
