@@ -2,6 +2,19 @@
 
 If you are new to this challenge, first of all, join [Newton School Official Discord Server](https://bit.ly/3hc9GsX) and get started with it. Awesome prizes are awaiting you. Use this blog as a reference for those who face problems while solving the questions. Don't forget to share it with your peers. 😊
 
+### Contents:
+
+1.  Tell Date
+    
+2.  Money Money
+    
+3.  Newton Hates Balloons
+    
+4.  Newton's family
+    
+5.  Camp
+    
+
 ## Question 1: Tell Date
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670916242079/N-TcD-oGp.png align="center")
@@ -102,6 +115,24 @@ for i in range(1,n+1):
         
 for i in range(1,n+1):
     print(d[i])
+```
+
+## Question 5: Camp
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671001219042/cYnB6xfVp.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+a,b=map(int,input().split())
+l=list(map(int,input().split()))
+
+rem= a- sum(l)
+if(rem<0):
+    print(-1)
+else:
+    print(rem)
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
