@@ -4,7 +4,7 @@ If you are new to this challenge, first of all, join [Newton School Official Dis
 
 ### Language Used:
 
- ![python](https://skillicons.dev/icons?i=python)
+![python](https://skillicons.dev/icons?i=python align="left")
 
 ### Contents:
 
@@ -17,6 +17,8 @@ If you are new to this challenge, first of all, join [Newton School Official Dis
 4.  Newton's family
     
 5.  Camp
+    
+6.  End Card
     
 
 ## Question 1: Tell Date
@@ -137,6 +139,18 @@ if(rem<0):
     print(-1)
 else:
     print(rem)
+```
+
+## Question 6: End Card
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671201723914/XjEIQY0TT.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+n,i=map(int,input().split())
+print(n-i+1)
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
