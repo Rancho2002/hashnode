@@ -20,6 +20,8 @@ If you are new to this challenge, first of all, join [Newton School Official Dis
     
 6.  End Card
     
+7.  Newtogon
+    
 
 ## Question 1: Tell Date
 
@@ -151,6 +153,29 @@ else:
 # Your code here
 n,i=map(int,input().split())
 print(n-i+1)
+```
+
+## Question 7: Newtogon
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671346916754/u20YbuMEl.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+a=int(input())
+sides=list(map(int,input().split()))
+temp=sides.copy()
+
+flag=False
+for i in sides:
+    temp.remove(i)
+    if(i>sum(temp)):
+        flag=True
+    temp=sides.copy()
+
+if(flag): print("No")
+else: print("Yes")
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
