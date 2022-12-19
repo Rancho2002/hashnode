@@ -22,6 +22,8 @@ If you are new to this challenge, first of all, join [Newton School Official Dis
     
 7.  Newtogon
     
+8.  Point Dance
+    
 
 ## Question 1: Tell Date
 
@@ -176,6 +178,30 @@ for i in sides:
 
 if(flag): print("No")
 else: print("Yes")
+```
+
+## Question 8: Point Dance
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671478429823/EZYEvqxVb.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+checkpt, total=map(int,input().split())
+cords=list(map(int,input().split()))
+cords.sort()
+place=0
+l=[0]
+for i in range(1,total):
+    l.append(abs(cords[i-1]-cords[i]))
+
+l.sort()
+# print(l)
+# print(total-checkpt)
+for i in range(total-checkpt+1):
+    place+=l[i]
+print(place)
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
