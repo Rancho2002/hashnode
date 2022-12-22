@@ -6,25 +6,6 @@ If you are new to this challenge, first of all, join [Newton School Official Dis
 
 ![python](https://skillicons.dev/icons?i=python align="left")
 
-### Contents:
-
-1.  Tell Date
-    
-2.  Money Money
-    
-3.  Newton Hates Balloons
-    
-4.  Newton's family
-    
-5.  Camp
-    
-6.  End Card
-    
-7.  Newtogon
-    
-8.  Point Dance
-    
-
 ## Question 1: Tell Date
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670916242079/N-TcD-oGp.png align="center")
