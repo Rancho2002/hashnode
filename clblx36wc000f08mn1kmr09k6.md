@@ -2,7 +2,7 @@
 
 If you are new to this challenge, first of all, join [Newton School Official Discord Server](https://bit.ly/3hc9GsX) and get started with it. Awesome prizes are awaiting you. Use this blog as a reference for those who face problems while solving the questions. Don't forget to share it with your peers. 😊
 
-### Language Used:
+### Language used in this blog
 
 ![python](https://skillicons.dev/icons?i=python align="left")
 
@@ -183,6 +183,28 @@ l.sort()
 for i in range(total-checkpt+1):
     place+=l[i]
 print(place)
+```
+
+## Question 9 : Divide It
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671706044136/MtCm4WYrm.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+def belongToSame(x,y):
+    a=[1 ,3 ,5 ,7 ,8 ,10,12]
+    b=[4,6,9,11]
+    c=[2]
+    if((x in a and y in a)or(x in b and y in b)or(x in c and y in c)):
+        print("Yes")
+    else:
+        print("No")
+
+x,y=map(int,input().split())
+
+belongToSame(x,y)
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
