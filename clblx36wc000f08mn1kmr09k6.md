@@ -2,7 +2,7 @@
 
 If you are new to this challenge, first of all, join [Newton School Official Discord Server](https://bit.ly/3hc9GsX) and get started with it. Awesome prizes are awaiting you. Use this blog as a reference for those who face problems while solving the questions. Don't forget to share it with your peers. 😊
 
-### Language used in this blog
+### Language used in this blog 👉
 
 ![python](https://skillicons.dev/icons?i=python align="left")
 
