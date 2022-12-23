@@ -207,4 +207,26 @@ x,y=map(int,input().split())
 belongToSame(x,y)
 ```
 
+## Question 10: Find Prosum
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671804311776/7417c134-52bf-4742-ba41-dec22cae073d.png align="center")
+
+## Solution 10:
+
+```python
+# Your code here
+n=int(input())
+l=list(map(int,input().split()))
+tosum=l[n-1]
+ans=0
+mod=10**9+7
+
+for i in range(n-2,-1,-1):
+    ans=(ans+(tosum*l[i]))%mod
+    tosum=(tosum+l[i])%mod
+
+
+print(ans)
+```
+
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
