@@ -222,11 +222,11 @@ ans=0
 mod=10**9+7
 
 for i in range(n-2,-1,-1):
-    ans=(ans+(tosum*l[i]))%mod
-    tosum=(tosum+l[i])%mod
+    ans=(ans+(tosum*l[i]))
+    tosum=(tosum+l[i])
 
 
-print(ans)
+print(ans%mod)
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
