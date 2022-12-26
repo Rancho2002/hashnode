@@ -229,4 +229,45 @@ for i in range(n-2,-1,-1):
 print(ans%mod)
 ```
 
+## Question 11: Letter Game
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672059150168/d2f8301c-ab9f-47de-891c-db91600b8720.png align="center")
+
+## Solution :
+
+```python
+# Your code here
+letter=input().strip()
+if(len(set(letter))==1): print("Won")
+else: print("Lost")
+```
+
+## Question 12: Vegetable
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672059278248/9f81730a-d0f8-403b-a606-631b308708da.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+def vegetable(dish,vege):
+    #checking posibilities
+    allChn=dish*2
+    allIt=dish*4
+    flag=False
+    if(vege==allChn or vege==allIt):
+        flag=True
+    elif(vege>allChn and vege<allIt):
+        for i in range(1,dish+1):
+            if((4*i+(2*(dish-i)))==vege):
+                flag=True
+                break
+    return flag
+
+dish,vege=map(int,input().split())
+
+flag=vegetable(dish,vege)
+print("Yes" if flag else "No")
+```
+
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
