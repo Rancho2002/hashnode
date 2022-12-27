@@ -270,4 +270,19 @@ flag=vegetable(dish,vege)
 print("Yes" if flag else "No")
 ```
 
+## Question 13:
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672147589202/633f6217-df5d-41de-8acf-f7e105a2c4d7.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+def find(arr):
+    return arr.index(0)+1
+
+arr=list(map(int,input().split()))
+print(find(arr))
+```
+
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
