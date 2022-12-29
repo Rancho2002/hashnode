@@ -285,4 +285,23 @@ arr=list(map(int,input().split()))
 print(find(arr))
 ```
 
+## Question 14: **Kick Palindrome**
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672331943797/5d3ad71b-accc-4f4b-b912-fe662db60ebd.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+def minKick(gift):
+    count=0
+    for i in range(len(gift)//2):
+        if(gift[i]!=gift[(len(gift)-1)-i]):
+            count+=1
+    return count
+
+gift=input()
+print(minKick(gift))
+```
+
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
