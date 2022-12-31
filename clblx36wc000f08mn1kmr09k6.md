@@ -304,4 +304,25 @@ gift=input()
 print(minKick(gift))
 ```
 
+## Question 15: Newton Gold Magic
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672482581214/5b5b880f-4ae4-4980-b033-d7c2c624e169.png align="center")
+
+## Solution:
+
+```python
+# Your code here
+def magic(gold,n):
+    gold.sort()
+    s=(gold[0]+gold[1])/2
+    for i in range(2,n):
+        s=s+gold[i]
+        s=s/2
+    return s
+n=int(input())
+gold=list(map(int,input().split()))
+
+print(f"{magic(gold,n):.8f}")
+```
+
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
