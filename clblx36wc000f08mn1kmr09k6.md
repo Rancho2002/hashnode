@@ -10,7 +10,7 @@ If you are new to this challenge, first of all, join [Newton School Official Dis
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670916242079/N-TcD-oGp.png align="center")
 
-## Solution:
+### Solution:
 
 ```python
 # Your code here
@@ -211,7 +211,7 @@ belongToSame(x,y)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671804311776/7417c134-52bf-4742-ba41-dec22cae073d.png align="center")
 
-## Solution 10:
+## Solution:
 
 ```python
 # Your code here
