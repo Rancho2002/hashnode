@@ -2,7 +2,7 @@
 
 If you are new to this challenge, first of all, join [Newton School Official Discord Server](https://bit.ly/3hc9GsX) and get started with it. Awesome prizes are awaiting you. Use this blog as a reference for those who face problems while solving the questions. Don't forget to share it with your peers. 😊
 
-### Language in this blog
+### ::Language in this blog::
 
 ![python](https://skillicons.dev/icons?i=python align="left")
 
@@ -270,7 +270,7 @@ flag=vegetable(dish,vege)
 print("Yes" if flag else "No")
 ```
 
-## Question 13:
+## Question 13: Assign Zero
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672147589202/633f6217-df5d-41de-8acf-f7e105a2c4d7.png align="center")
 
