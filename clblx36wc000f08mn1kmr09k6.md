@@ -2,7 +2,7 @@
 
 If you are new to this challenge, first of all, join [Newton School Official Discord Server](https://bit.ly/3hc9GsX) and get started with it. Awesome prizes are awaiting you. Use this blog as a reference for those who face problems while solving the questions. Don't forget to share it with your peers. 😊
 
-### Language used in this blog 👉
+### Language in this blog
 
 ![python](https://skillicons.dev/icons?i=python align="left")
 
@@ -10,7 +10,7 @@ If you are new to this challenge, first of all, join [Newton School Official Dis
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670916242079/N-TcD-oGp.png align="center")
 
-### Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -39,7 +39,7 @@ else:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670916394025/fnc3_K_QN.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 init=0
@@ -58,7 +58,7 @@ print(format(init,".8f"))
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670916512215/0IsdN10f-.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 import sys
@@ -84,7 +84,7 @@ else:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670934432469/WKdff1eHq.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 n=int(input())
@@ -112,7 +112,7 @@ for i in range(1,n+1):
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671001219042/cYnB6xfVp.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -130,7 +130,7 @@ else:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671201723914/XjEIQY0TT.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -142,7 +142,7 @@ print(n-i+1)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671346916754/u20YbuMEl.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -165,7 +165,7 @@ else: print("Yes")
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671478429823/EZYEvqxVb.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -189,7 +189,7 @@ print(place)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671706044136/MtCm4WYrm.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -211,7 +211,7 @@ belongToSame(x,y)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1671804311776/7417c134-52bf-4742-ba41-dec22cae073d.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -233,7 +233,7 @@ print(ans%mod)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672059150168/d2f8301c-ab9f-47de-891c-db91600b8720.png align="center")
 
-## Solution :
+***Solution:***
 
 ```python
 # Your code here
@@ -246,7 +246,7 @@ else: print("Lost")
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672059278248/9f81730a-d0f8-403b-a606-631b308708da.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -274,7 +274,7 @@ print("Yes" if flag else "No")
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672147589202/633f6217-df5d-41de-8acf-f7e105a2c4d7.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -289,7 +289,7 @@ print(find(arr))
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672331943797/5d3ad71b-accc-4f4b-b912-fe662db60ebd.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -308,7 +308,7 @@ print(minKick(gift))
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672482581214/5b5b880f-4ae4-4980-b033-d7c2c624e169.png align="center")
 
-## Solution:
+***Solution:***
 
 ```python
 # Your code here
@@ -329,7 +329,7 @@ print(f"{magic(gold,n):.8f}")
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672831113382/8952146e-2276-4d97-abea-5e76a981eead.png align="center")
 
-## Solution :
+***Solution:***
 
 ```python
 # Your code here
