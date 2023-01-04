@@ -325,4 +325,29 @@ gold=list(map(int,input().split()))
 print(f"{magic(gold,n):.8f}")
 ```
 
+## Question 16: Stringram
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1672831113382/8952146e-2276-4d97-abea-5e76a981eead.png align="center")
+
+## Solution :
+
+```python
+# Your code here
+n=int(input())
+l={}
+
+for i in range(n):
+    s=input()
+    m="".join(sorted(s))
+    if(m in l):
+        l[m]=l[m]+1
+    else:
+        l[m]=1
+count=0
+for i in l:
+    if(l[i]>1):
+        count+=(l[i]*(l[i]-1))/2
+print(int(count))
+```
+
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
