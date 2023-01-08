@@ -1012,21 +1012,24 @@ print(int(count))
 > 
 > **Problem Statement**
 > 
-> Newton has shifted to a new house and it came to his notice that there is only one socket in his house !!!  
->   
-> Newton does a lot of experiments using electricity and wants at least B sockets in his house.  
->   
-> Furthermore, he has ample amount of extension cords and each extension has A sockets and takes one socket. In others words, an extension cord extends one socket into A sockets.  
->   
+> Newton has shifted to a new house and it came to his notice that there is only one socket in his house !!!
+> 
+> Newton does a lot of experiments using electricity and wants at least B sockets in his house.
+> 
+> Furthermore, he has ample amount of extension cords and each extension has A sockets and takes one socket. In others words, an extension cord extends one socket into A sockets.
+> 
 > You need to tell Newton how many extension cords will be required so that he can have at least B sockets.
 > 
 > **Input**
 > 
-> The first and the only line of the input contains 2 single integers A and B  
->   
-> **Constraints:**  
-> 1) 2 ≤ A ≤ 200  
-> 2) 1 ≤ B ≤ 200
+> The first and the only line of the input contains 2 single integers A and B
+> 
+> **Constraints:**
+> 
+> 1. 2 ≤ A ≤ 200
+>     
+> 2. 1 ≤ B ≤ 200
+>     
 > 
 > **Output**
 > 
@@ -1035,17 +1038,17 @@ print(int(count))
 > **Example**
 > 
 > **Sample Input 1:**  
-> 4 10  
->   
+> 4 10
+> 
 > **Sample Output 1:**  
-> 3  
->   
+> 3
+> 
 > **Sample Explanation 1:**  
-> 3 power strips, each with 4 sockets, extend the socket into 10 empty sockets.  
->   
+> 3 power strips, each with 4 sockets, extend the socket into 10 empty sockets.
+> 
 > **Sample Input 2:**  
-> 8 9  
->   
+> 8 9
+> 
 > **Sample Output 2:**  
 > 2
 
@@ -1063,6 +1066,144 @@ def solve(A,B):
     print(ans)
 a,b=map(int,input().split())
 solve(a,b)
+```
+
+## Question 18: Max ModPerm
+
+> **Max ModPerm**
+> 
+> Time Limit: 2 sec  
+> Memory Limit: 128000 kB
+> 
+> **Problem Statement**
+> 
+> Newton is given an integer N, he has to perform 3 steps on it.  
+>   
+> 1) First - He has to create permutation of numbers from 1 to N. Let the permutation be P<sub>1</sub>, P<sub>2</sub>,. ., P<sub>N</sub>.  
+>   
+> 2) Second - He has to find the remainder, R<sub>i</sub>, after dividing *i* with P<sub>i</sub> for all *i* from 1 to N. Let the sequence be R<sub>1</sub>, R<sub>2</sub>,. ., R<sub>N</sub>.  
+>   
+> 3) Third - Find the sum of all the remainders, i. e. R<sub>1</sub> + R<sub>2</sub> +. . + R<sub>N</sub>.  
+>   
+>   
+> Now Newton has to choose the starting permutation in such a way that the sum of the remainders after the third step is the maximum possible.  
+>   
+> Print the maximum possible value.
+> 
+> **Input**
+> 
+> The first and the only line of the input contains a single integer N  
+>   
+> **Constraints;**  
+> 1 ≤ N ≤ 10<sup>9</sup>
+> 
+> **Output**
+> 
+> Output the maximum value possible by adding the remainders.
+> 
+> **Example**
+> 
+> **Sample Input 1:**  
+> 2  
+>   
+> **Sample Output 1:**  
+> 1  
+>   
+> **Sample Explanation 1:**  
+> The permutation is {2, 1}  
+> Remainders will be {0, 1}  
+> Sum is 1.  
+>   
+> **Sample Input 2:**  
+> 13  
+>   
+> **Sample Output 2:**  
+> 78
+
+***Solution:***
+
+```python
+# Your code here : Python 3.8
+from math import comb
+n=int(input())
+print(comb(n,2))
+```
+
+## Question 19: Near Equal Weight
+
+> **Near Equal Weight**
+> 
+> Time Limit: 2 sec  
+> Memory Limit: 128000 kB
+> 
+> **Problem Statement**
+> 
+> Newton has N different weights indexed from 1 to N i.e. W<sub>1</sub>, W<sub>2</sub>, ... , W<sub>N</sub>.  
+>   
+> Newton is having a hard time trying to balance the weights. He wants to divides the weights into 2 parts.  
+>   
+> To do so, he is choosing an integer X and merging all the weights having index not more than X into a single weight S<sub>1</sub> and the remaining weights into a single weight S<sub>2</sub>.  
+>   
+> He needs to choose the index X in such a way that the absolute difference of the weights S<sub>1</sub> and S<sub>2</sub> is the minimum.  
+>   
+> Find the least possible absolute difference that Newton can come up with.
+> 
+> **Input**
+> 
+> The first line of the input contains a single integer N.  
+> The next line of the input contains N space separated integers W<sub>1</sub>, W<sub>2</sub>, ... , W<sub>N</sub>.  
+>   
+> <sub>Constraints:</sub>  
+> 1) 2 ≤ N ≤ 1000  
+> 2) 1 ≤ W<sub>i</sub> ≤ 1000
+> 
+> **Output**
+> 
+> Print the answer in a single line
+> 
+> **Example**
+> 
+> **Sample Input 1:**  
+> 4  
+> 1 2 3 6  
+>   
+> **Sample Output 1:**  
+> 0  
+>   
+> **Sample Explanation 1:**  
+> Choose X as 3,  
+> W<sub>1</sub> = 1 + 2 + 3 = 6  
+> W<sub>2</sub> = 6  
+> So, | W<sub>1</sub> - W<sub>2</sub> | = 0  
+>   
+> **Sample Input 2:**  
+> 4  
+> 1 3 1 1  
+>   
+> **Sample Output 2:**  
+> 2  
+>   
+> **Sample Input 3:**  
+> 8  
+> 27 23 76 2 3 5 62 52  
+>   
+> **Sample Output 3:**  
+> 2
+
+***Solution:***
+
+```python
+# Your code here
+def solve(n,l):
+    m=abs(sum(l[0:1])-sum(l[1:]))
+    for i in range(1,n):
+        x=abs(sum(l[0:i])-sum(l[i:]))
+        if(x<m):
+            m=x
+    return m
+n=int(input())
+l=list(map(int,input().split()))
+print(solve(n,l))
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
