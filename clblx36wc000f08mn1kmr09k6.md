@@ -1077,23 +1077,23 @@ solve(a,b)
 > 
 > **Problem Statement**
 > 
-> Newton is given an integer N, he has to perform 3 steps on it.  
->   
-> 1) First - He has to create permutation of numbers from 1 to N. Let the permutation be P<sub>1</sub>, P<sub>2</sub>,. ., P<sub>N</sub>.  
->   
-> 2) Second - He has to find the remainder, R<sub>i</sub>, after dividing *i* with P<sub>i</sub> for all *i* from 1 to N. Let the sequence be R<sub>1</sub>, R<sub>2</sub>,. ., R<sub>N</sub>.  
->   
-> 3) Third - Find the sum of all the remainders, i. e. R<sub>1</sub> + R<sub>2</sub> +. . + R<sub>N</sub>.  
->   
->   
-> Now Newton has to choose the starting permutation in such a way that the sum of the remainders after the third step is the maximum possible.  
->   
+> Newton is given an integer N, he has to perform 3 steps on it.
+> 
+> 1. First - He has to create permutation of numbers from 1 to N. Let the permutation be P<sub>1</sub>, P<sub>2</sub>,. ., P<sub>N</sub>.
+>     
+> 2. Second - He has to find the remainder, R<sub>i</sub>, after dividing *i* with P<sub>i</sub> for all *i* from 1 to N. Let the sequence be R<sub>1</sub>, R<sub>2</sub>,. ., R<sub>N</sub>.
+>     
+> 3. Third - Find the sum of all the remainders, i. e. R<sub>1</sub> + R<sub>2</sub> +. . + R<sub>N</sub>.
+>     
+> 
+> Now Newton has to choose the starting permutation in such a way that the sum of the remainders after the third step is the maximum possible.
+> 
 > Print the maximum possible value.
 > 
 > **Input**
 > 
-> The first and the only line of the input contains a single integer N  
->   
+> The first and the only line of the input contains a single integer N
+> 
 > **Constraints;**  
 > 1 ≤ N ≤ 10<sup>9</sup>
 > 
@@ -1104,19 +1104,19 @@ solve(a,b)
 > **Example**
 > 
 > **Sample Input 1:**  
-> 2  
->   
+> 2
+> 
 > **Sample Output 1:**  
-> 1  
->   
+> 1
+> 
 > **Sample Explanation 1:**  
 > The permutation is {2, 1}  
 > Remainders will be {0, 1}  
-> Sum is 1.  
->   
+> Sum is 1.
+> 
 > **Sample Input 2:**  
-> 13  
->   
+> 13
+> 
 > **Sample Output 2:**  
 > 78
 
@@ -1138,24 +1138,27 @@ print(comb(n,2))
 > 
 > **Problem Statement**
 > 
-> Newton has N different weights indexed from 1 to N i.e. W<sub>1</sub>, W<sub>2</sub>, ... , W<sub>N</sub>.  
->   
-> Newton is having a hard time trying to balance the weights. He wants to divides the weights into 2 parts.  
->   
-> To do so, he is choosing an integer X and merging all the weights having index not more than X into a single weight S<sub>1</sub> and the remaining weights into a single weight S<sub>2</sub>.  
->   
-> He needs to choose the index X in such a way that the absolute difference of the weights S<sub>1</sub> and S<sub>2</sub> is the minimum.  
->   
+> Newton has N different weights indexed from 1 to N i.e. W<sub>1</sub>, W<sub>2</sub>, ... , W<sub>N</sub>.
+> 
+> Newton is having a hard time trying to balance the weights. He wants to divides the weights into 2 parts.
+> 
+> To do so, he is choosing an integer X and merging all the weights having index not more than X into a single weight S<sub>1</sub> and the remaining weights into a single weight S<sub>2</sub>.
+> 
+> He needs to choose the index X in such a way that the absolute difference of the weights S<sub>1</sub> and S<sub>2</sub> is the minimum.
+> 
 > Find the least possible absolute difference that Newton can come up with.
 > 
 > **Input**
 > 
 > The first line of the input contains a single integer N.  
-> The next line of the input contains N space separated integers W<sub>1</sub>, W<sub>2</sub>, ... , W<sub>N</sub>.  
->   
-> <sub>Constraints:</sub>  
-> 1) 2 ≤ N ≤ 1000  
-> 2) 1 ≤ W<sub>i</sub> ≤ 1000
+> The next line of the input contains N space separated integers W<sub>1</sub>, W<sub>2</sub>, ... , W<sub>N</sub>.
+> 
+> <sub>Constraints:</sub>
+> 
+> 1. 2 ≤ N ≤ 1000
+>     
+> 2. 1 ≤ W<sub>i</sub> ≤ 1000
+>     
 > 
 > **Output**
 > 
@@ -1165,28 +1168,28 @@ print(comb(n,2))
 > 
 > **Sample Input 1:**  
 > 4  
-> 1 2 3 6  
->   
+> 1 2 3 6
+> 
 > **Sample Output 1:**  
-> 0  
->   
+> 0
+> 
 > **Sample Explanation 1:**  
 > Choose X as 3,  
 > W<sub>1</sub> = 1 + 2 + 3 = 6  
 > W<sub>2</sub> = 6  
-> So, | W<sub>1</sub> - W<sub>2</sub> | = 0  
->   
+> So, | W<sub>1</sub> - W<sub>2</sub> | = 0
+> 
 > **Sample Input 2:**  
 > 4  
-> 1 3 1 1  
->   
+> 1 3 1 1
+> 
 > **Sample Output 2:**  
-> 2  
->   
+> 2
+> 
 > **Sample Input 3:**  
 > 8  
-> 27 23 76 2 3 5 62 52  
->   
+> 27 23 76 2 3 5 62 52
+> 
 > **Sample Output 3:**  
 > 2
 
@@ -1204,6 +1207,70 @@ def solve(n,l):
 n=int(input())
 l=list(map(int,input().split()))
 print(solve(n,l))
+```
+
+## Question 20: Broken Ways
+
+> **Broken Ways**
+> 
+> Time Limit: 2 sec  
+> Memory Limit: 128000 kB
+> 
+> **Problem Statement**
+> 
+> Newton is standing before a typical staircase with N steps. Newton is standing on the 0-th step and wants to go to the N-th step. To reach the top he can either take a single step or he can take a double step (two steps) at the same time.  
+>   
+> However, M of the N steps are broken i. e. S<sub>1</sub>, S<sub>2</sub>, ... , S<sub>M</sub> are broken and Newton cannot visit those steps,  
+>   
+> Find out the number of different ways in which Newton can climb to the top of the staircase. Since the number can be very large, find it modulo 1,000,000,007
+> 
+> **Input**
+> 
+> The first line contains two integers, N and M.  
+> The next M lines contains a single integer each, S<sub>i</sub>  
+>   
+> **Constraints:**  
+> 1) 1 ≤ N ≤ 2 x 10<sup>5</sup>  
+> 2) 0 ≤ M ≤ N - 1  
+> 3) 1 ≤ S<sub>1</sub> &lt; S<sub>2</sub>, &lt; ... &lt; S<sub>M</sub> ≤ N - 1
+> 
+> **Output**
+> 
+> Print the number of ways
+> 
+> **Example**
+> 
+> **Sample Input 1:**  
+> 6 1  
+> 3  
+> **Sample Output 1:**  
+> 4  
+> **Sample Explanation 1:**  
+> There are four ways to climb up the stairs, as follows:  
+> 0→1→2→4→5→6  
+> 0→1→2→4→6  
+> 0→2→4→5→6  
+> 0→2→4→6
+
+***Solution:***
+
+```python
+import sys
+from collections import defaultdict
+
+N, M = map(int, input().split())
+mod = 1000000007
+hs = set()
+for i in range(M):
+    hs.add(int(input()))
+dp = defaultdict(lambda: 0)
+dp[0] = 1
+if 1 not in hs:
+    dp[1] = 1
+for i in range(2, N+1):
+    if i not in hs:
+        dp[i] = (dp[i-1] + dp[i-2]) % mod
+print(dp[N])
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
