@@ -1218,21 +1218,25 @@ print(solve(n,l))
 > 
 > **Problem Statement**
 > 
-> Newton is standing before a typical staircase with N steps. Newton is standing on the 0-th step and wants to go to the N-th step. To reach the top he can either take a single step or he can take a double step (two steps) at the same time.  
->   
-> However, M of the N steps are broken i. e. S<sub>1</sub>, S<sub>2</sub>, ... , S<sub>M</sub> are broken and Newton cannot visit those steps,  
->   
+> Newton is standing before a typical staircase with N steps. Newton is standing on the 0-th step and wants to go to the N-th step. To reach the top he can either take a single step or he can take a double step (two steps) at the same time.
+> 
+> However, M of the N steps are broken i. e. S<sub>1</sub>, S<sub>2</sub>, ... , S<sub>M</sub> are broken and Newton cannot visit those steps,
+> 
 > Find out the number of different ways in which Newton can climb to the top of the staircase. Since the number can be very large, find it modulo 1,000,000,007
 > 
 > **Input**
 > 
 > The first line contains two integers, N and M.  
-> The next M lines contains a single integer each, S<sub>i</sub>  
->   
-> **Constraints:**  
-> 1) 1 ≤ N ≤ 2 x 10<sup>5</sup>  
-> 2) 0 ≤ M ≤ N - 1  
-> 3) 1 ≤ S<sub>1</sub> &lt; S<sub>2</sub>, &lt; ... &lt; S<sub>M</sub> ≤ N - 1
+> The next M lines contains a single integer each, S<sub>i</sub>
+> 
+> **Constraints:**
+> 
+> 1. 1 ≤ N ≤ 2 x 10<sup>5</sup>
+>     
+> 2. 0 ≤ M ≤ N - 1
+>     
+> 3. 1 ≤ S<sub>1</sub> &lt; S<sub>2</sub>, &lt; ... &lt; S<sub>M</sub> ≤ N - 1
+>     
 > 
 > **Output**
 > 
@@ -1271,6 +1275,73 @@ for i in range(2, N+1):
     if i not in hs:
         dp[i] = (dp[i-1] + dp[i-2]) % mod
 print(dp[N])
+```
+
+## Question 21: Greedy Newton
+
+> **Greedy Newton**
+> 
+> Time Limit: 2 sec  
+> Memory Limit: 128000 kB
+> 
+> **Problem Statement**
+> 
+> Newton has A cookies, and Einstein has B cookies. Newton will do the following action K times:  
+>   
+> 1) If Newton has one or more cookies, eat one of his cookies.  
+> 2) Otherwise, if Einstein has one or more cookies, eat one of Einstein's cookies.  
+> 3) If they both have no cookies, do nothing.  
+>   
+> In the end, how many cookies will Newton and Einstein have, respectively?
+> 
+> **Input**
+> 
+> The first line of the input contains 3 integers, A, B and K  
+>   
+> **Constraints:**  
+> 1) 0 ≤ A ≤ 10<sup>12</sup>  
+> 2) 0 ≤ B ≤ 10<sup>12</sup>  
+> 3) 0 ≤ K ≤ 10<sup>12</sup>
+> 
+> **Output**
+> 
+> Print the number of Newton's and Einstein's cookies after K actions.
+> 
+> **Example**
+> 
+> **Sample Input 1:**  
+> 2 3 3  
+>   
+> **Sample Output 1:**  
+> 0 2  
+>   
+> **Sample Explanation 1:**  
+> Newton will do the following:  
+>   
+> 1) He has two cookies, so he eats one of them.  
+> 2) Now he has one cookie left, and he eats it.  
+> 3) Now he has no cookies left, but Einstein has three, so Newton eats one of them.  
+>   
+> Thus, in the end, Newton will have 0 cookies, and Einstein will have 2.  
+>   
+> **Sample Input 2:**  
+> 500000000000 500000000000 1000000000000  
+>   
+> **Sample Output 2:**  
+> 0 0
+
+***Solution:***
+
+```python
+# Your code here
+a,b,k=map(int,input().split())
+if(k-a>=0):
+    if(b-(k-a)<0):
+        print(0,0)
+    else:
+        print(0,b-(k-a))
+else:
+    print(a-k,b)
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
