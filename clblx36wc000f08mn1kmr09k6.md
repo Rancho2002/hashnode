@@ -1286,22 +1286,29 @@ print(dp[N])
 > 
 > **Problem Statement**
 > 
-> Newton has A cookies, and Einstein has B cookies. Newton will do the following action K times:  
->   
-> 1) If Newton has one or more cookies, eat one of his cookies.  
-> 2) Otherwise, if Einstein has one or more cookies, eat one of Einstein's cookies.  
-> 3) If they both have no cookies, do nothing.  
->   
+> Newton has A cookies, and Einstein has B cookies. Newton will do the following action K times:
+> 
+> 1. If Newton has one or more cookies, eat one of his cookies.
+>     
+> 2. Otherwise, if Einstein has one or more cookies, eat one of Einstein's cookies.
+>     
+> 3. If they both have no cookies, do nothing.
+>     
+> 
 > In the end, how many cookies will Newton and Einstein have, respectively?
 > 
 > **Input**
 > 
-> The first line of the input contains 3 integers, A, B and K  
->   
-> **Constraints:**  
-> 1) 0 ≤ A ≤ 10<sup>12</sup>  
-> 2) 0 ≤ B ≤ 10<sup>12</sup>  
-> 3) 0 ≤ K ≤ 10<sup>12</sup>
+> The first line of the input contains 3 integers, A, B and K
+> 
+> **Constraints:**
+> 
+> 1. 0 ≤ A ≤ 10<sup>12</sup>
+>     
+> 2. 0 ≤ B ≤ 10<sup>12</sup>
+>     
+> 3. 0 ≤ K ≤ 10<sup>12</sup>
+>     
 > 
 > **Output**
 > 
@@ -1310,23 +1317,26 @@ print(dp[N])
 > **Example**
 > 
 > **Sample Input 1:**  
-> 2 3 3  
->   
+> 2 3 3
+> 
 > **Sample Output 1:**  
-> 0 2  
->   
+> 0 2
+> 
 > **Sample Explanation 1:**  
-> Newton will do the following:  
->   
-> 1) He has two cookies, so he eats one of them.  
-> 2) Now he has one cookie left, and he eats it.  
-> 3) Now he has no cookies left, but Einstein has three, so Newton eats one of them.  
->   
-> Thus, in the end, Newton will have 0 cookies, and Einstein will have 2.  
->   
+> Newton will do the following:
+> 
+> 1. He has two cookies, so he eats one of them.
+>     
+> 2. Now he has one cookie left, and he eats it.
+>     
+> 3. Now he has no cookies left, but Einstein has three, so Newton eats one of them.
+>     
+> 
+> Thus, in the end, Newton will have 0 cookies, and Einstein will have 2.
+> 
 > **Sample Input 2:**  
-> 500000000000 500000000000 1000000000000  
->   
+> 500000000000 500000000000 1000000000000
+> 
 > **Sample Output 2:**  
 > 0 0
 
@@ -1342,6 +1352,67 @@ if(k-a>=0):
         print(0,b-(k-a))
 else:
     print(a-k,b)
+```
+
+## Question 22: Strongidrome
+
+> **Problem Statement**
+> 
+> A string S of an odd length is said to be a strong palindrome if and only if all of the following conditions are satisfied:  
+>   
+> 1) S is a palindrome.  
+> 2) Let N be the length of S. The string formed by the 1- st through ((N−1)/2)- th characters of S is a palindrome.  
+> 3) The string consisting of the (N+3)/2- st through N- th characters of S is a palindrome.  
+>   
+> Determine whether S is a strong palindrome.
+> 
+> **Input**
+> 
+> The first and the only line of the input contains a single string S.  
+>   
+> **Constraints:**  
+> 3 ≤ |S| ≤ 99
+> 
+> **Output**
+> 
+> If S is a strong palindrome, print "Yes"; otherwise, print "No".
+> 
+> **Example**
+> 
+> **Sample Input 1:**  
+> akasaka  
+>   
+> **Sample Output 1:**  
+> Yes  
+>   
+> **Sample Explanation 1:**  
+> 1) S is akasaka.  
+> 2) The string formed by the 1- st through the 3- rd characters is aka.  
+> 3) The string formed by the 5- th through the 7- th characters is aka. All of these are palindromes, so S is a strong palindrome.  
+>   
+> **Sample Input 2:**  
+> level  
+>   
+> **Sample Output 2:**  
+> No
+
+***Solution:***
+
+```python
+def isPalindrome(s,l,r):
+    while(l<r):
+        if(s[l]!=s[r]):
+            return False
+        l+=1
+        r-=1
+    return True
+
+s=input()
+n=len(s)
+if(isPalindrome(s,0,n-1) and isPalindrome(s,0,(n-1)//2-1) and isPalindrome(s,(n+3)//2-1,n-1)):
+    print("Yes")
+else:
+    print("No")
 ```
 
 ### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
