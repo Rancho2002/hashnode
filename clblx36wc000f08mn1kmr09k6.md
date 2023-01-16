@@ -1358,18 +1358,21 @@ else:
 
 > **Problem Statement**
 > 
-> A string S of an odd length is said to be a strong palindrome if and only if all of the following conditions are satisfied:  
->   
-> 1) S is a palindrome.  
-> 2) Let N be the length of S. The string formed by the 1- st through ((N−1)/2)- th characters of S is a palindrome.  
-> 3) The string consisting of the (N+3)/2- st through N- th characters of S is a palindrome.  
->   
+> A string S of an odd length is said to be a strong palindrome if and only if all of the following conditions are satisfied:
+> 
+> 1. S is a palindrome.
+>     
+> 2. Let N be the length of S. The string formed by the 1- st through ((N−1)/2)- th characters of S is a palindrome.
+>     
+> 3. The string consisting of the (N+3)/2- st through N- th characters of S is a palindrome.
+>     
+> 
 > Determine whether S is a strong palindrome.
 > 
 > **Input**
 > 
-> The first and the only line of the input contains a single string S.  
->   
+> The first and the only line of the input contains a single string S.
+> 
 > **Constraints:**  
 > 3 ≤ |S| ≤ 99
 > 
@@ -1380,19 +1383,23 @@ else:
 > **Example**
 > 
 > **Sample Input 1:**  
-> akasaka  
->   
+> akasaka
+> 
 > **Sample Output 1:**  
-> Yes  
->   
-> **Sample Explanation 1:**  
-> 1) S is akasaka.  
-> 2) The string formed by the 1- st through the 3- rd characters is aka.  
-> 3) The string formed by the 5- th through the 7- th characters is aka. All of these are palindromes, so S is a strong palindrome.  
->   
+> Yes
+> 
+> **Sample Explanation 1:**
+> 
+> 1. S is akasaka.
+>     
+> 2. The string formed by the 1- st through the 3- rd characters is aka.
+>     
+> 3. The string formed by the 5- th through the 7- th characters is aka. All of these are palindromes, so S is a strong palindrome.
+>     
+> 
 > **Sample Input 2:**  
-> level  
->   
+> level
+> 
 > **Sample Output 2:**  
 > No
 
@@ -1415,4 +1422,4 @@ else:
     print("No")
 ```
 
-### New Questions are to be updated with a daily streak. Make sure you subscribe to the newsletter to be notified when I am adding more solutions. Thanks for reading 😊. A small sponsor is always appreciated 💝
+### Starting up a new marathon, on 30 days of code, on a different page , but is same going with 51 days of code. So, checkout this blog which is continuation of 51 days of code : [https://arijitghosh.hashnode.dev/day-to-day-solution-of-30-days-of-code](https://arijitghosh.hashnode.dev/day-to-day-solution-of-30-days-of-code)
