@@ -53,4 +53,34 @@ if __name__ == "__main__":
     main()
 ```
 
+## Day 2: Friends Or Not? !
+
+> **Problem Statement**
+> 
+> The students of Newton School threw a grand party to celebrate their hard work and achievements. They danced and sang the night away, enjoying delicious food and creating memories that would last a lifetime.  
+> There are N guests in the party and N-1 relationships are given. The guests are numbered 1, 2,. , N. The i- th relationship depicts that guest ai and guest bi are friends.  
+> Determine whether a guest exists or not who is a friend of all other guests.  
+> Here, we only consider the direct friendship
+> 
+> More info : [https://my.newtonschool.co/playground/code/w6g62sucd655](https://my.newtonschool.co/playground/code/w6g62sucd655)
+
+***Solution:***
+
+```python
+n = int(input())
+x, y = 0, 0
+mp = {}
+for i in range(n-1):
+    x, y = map(int, input().split())
+    mp[x] = mp.get(x, 0) + 1
+    mp[y] = mp.get(y, 0) + 1
+
+for key, value in mp.items():
+    if value == n-1:
+        print("Yes")
+        exit(0)
+print("No")
+# print(mp)
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
