@@ -83,4 +83,26 @@ print("No")
 # print(mp)
 ```
 
+## Day 3: Edward and Maths Competition
+
+> Edward participated in one maths competition. He was asked to find the number of ways to choose a pair of an even number and an odd number from the positive integers between 1 and N (inclusive). The order does not matter.
+> 
+> More info : [https://my.newtonschool.co/playground/code/vso6otmi5nv7](https://my.newtonschool.co/playground/code/vso6otmi5nv7)
+
+***Solution:***
+
+```python
+# Your code here
+n=int(input())
+
+if(n%2!=0):
+    a1=n//2
+    a2=(n+1)//2
+else:
+    a1=(n+1)//2
+    a2=n//2
+
+print(a1*a2)
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
