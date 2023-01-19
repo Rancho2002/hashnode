@@ -107,8 +107,8 @@ print(a1*a2)
 
 ## Day 4: Even Numbers - 2
 
-> Newton loves EVEN numbers.  
->   
+> Newton loves EVEN numbers.
+> 
 > You are given two integers N and M. Generate 5 unique even numbers for Newton between N and M (excluding both).
 > 
 > More info: [https://my.newtonschool.co/playground/code/idyoxe1fdjm9](https://my.newtonschool.co/playground/code/idyoxe1fdjm9)
@@ -118,9 +118,11 @@ print(a1*a2)
 n,m=map(int,input().split())
 chk=0
 for i in range(n+1,m):
-    if(i%2==0 and chk!=5):
+    if(i%2==0 and chk<5):
         print(i,end=" ")
         chk+=1
+    if(chk==5): break
+
 # end of program
 ```
 
