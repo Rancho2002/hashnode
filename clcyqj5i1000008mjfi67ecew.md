@@ -53,7 +53,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## Day 2: Friends Or Not? !
+## Day 2: Friends Or Not?!
 
 > **Problem Statement**
 > 
@@ -124,6 +124,32 @@ for i in range(n+1,m):
     if(chk==5): break
 
 # end of program
+```
+
+## Day 4: Emily and Triplets
+
+> **Problem Statement**
+> 
+> Emily was playing with triplets. She was excited to find out how many triples of non-negative integers (a, b, c) satisfy a+b+c≤S and a×b×c≤T, where S & T are non-negative integers.
+> 
+> More Info: [https://my.newtonschool.co/playground/code/qzm7lli9xevb](https://my.newtonschool.co/playground/code/qzm7lli9xevb)
+
+***Solution:***
+
+```python
+# Your code here
+def solve(s,t):
+    a=b=c=[x for x in range(0,101)]
+    count=0
+    for i in a:
+        for j in b:
+            for k in c:
+                if(i+j+k<=s and i*j*k<=t):
+                    count+=1
+    return count
+
+s,t=map(int,input().split())
+print(solve(s,t))
 ```
 
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
