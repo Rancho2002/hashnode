@@ -152,4 +152,30 @@ s,t=map(int,input().split())
 print(solve(s,t))
 ```
 
+## Day 6: Abhas and Numbers
+
+> **Problem Statement**
+> 
+> Abhas likes to play with numbers. He is given integers N and K. Find the number of triples (a, b, c) of positive integers not greater than N such that a+b, b+c, and c+a are all multiples of K. The order of a, b, and c does matter, and some of them can be the same.
+> 
+> More info: [https://my.newtonschool.co/playground/code/mhj0sjeq02c6](https://my.newtonschool.co/playground/code/mhj0sjeq02c6)
+
+***Solution:***
+
+```python
+# Your code here
+def solve(N, K):
+    if (K % 2 == 0):
+        x = N // K
+        y = (N + (K // 2)) // K
+ 
+        return x * x * x + y * y * y
+    else:
+        x = N // K
+        return x * x * x
+
+N,K=map(int,input().split())
+print(solve(N,K))
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
