@@ -178,4 +178,46 @@ N,K=map(int,input().split())
 print(solve(N,K))
 ```
 
+## Day 7: Matching Strings
+
+> **Problem Statement**
+> 
+> You are given two strings S and T. Determine whether it is possible to make S and T equal by doing the following operation at most once:  
+>   
+> Choose two adjacent characters in S and swap them.  
+>   
+> Note that it is allowed to choose not to do the operation.
+> 
+> More info: [https://my.newtonschool.co/playground/code/gw6aww5f6uhe](https://my.newtonschool.co/playground/code/gw6aww5f6uhe)
+
+***Solution:***
+
+```python
+# Your code here
+def swap(s,a,b):
+    if s[a]==s[b]:
+        return s
+    else:
+        s=list(s)
+        s[a],s[b]=s[b],s[a]
+        return ''.join(s)
+ 
+
+s=input()
+t=input()
+swapped=False
+
+for i in range(len(s)-1):
+    if(s[i]==t[i]):
+        continue
+    elif(i+1<len(s) and not swapped):
+        s=swap(s,i,i+1)
+        swapped=True
+
+if(s==t):
+    print("Yes")
+else:
+    print("No")
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
