@@ -182,10 +182,10 @@ print(solve(N,K))
 
 > **Problem Statement**
 > 
-> You are given two strings S and T. Determine whether it is possible to make S and T equal by doing the following operation at most once:  
->   
-> Choose two adjacent characters in S and swap them.  
->   
+> You are given two strings S and T. Determine whether it is possible to make S and T equal by doing the following operation at most once:
+> 
+> Choose two adjacent characters in S and swap them.
+> 
 > Note that it is allowed to choose not to do the operation.
 > 
 > More info: [https://my.newtonschool.co/playground/code/gw6aww5f6uhe](https://my.newtonschool.co/playground/code/gw6aww5f6uhe)
@@ -218,6 +218,32 @@ if(s==t):
     print("Yes")
 else:
     print("No")
+```
+
+## Day 8: Contiguous Substring
+
+> **Problem Statement**
+> 
+> You are given strings S and T consisting of lowercase English letters. Determine whether T is a (contiguous) substring of S.  
+>   
+> A string Y is said to be a (contiguous) substring of X if and only if Y can be obtained by performing the operation below on X zero or more times.  
+>   
+> Do one of the following.  
+> i) Delete the first character in X.  
+> ii) Delete the last character in X.  
+> For instance, the tag is a (contiguous) substring of voltage, while ace is not a (contiguous) substring of atcoder.
+> 
+> More info : [https://my.newtonschool.co/playground/code/lwkqwpx5vrwh](https://my.newtonschool.co/playground/code/lwkqwpx5vrwh)
+
+```python
+def solve(S,T):
+    if T in S:
+        print("Yes")
+    else:
+        print("No")
+S = input()
+T = input()
+solve(S,T)
 ```
 
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
