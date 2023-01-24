@@ -224,10 +224,10 @@ else:
 
 > **Problem Statement**
 > 
-> You are given strings S and T consisting of lowercase English letters. Determine whether T is a (contiguous) substring of S.  
->   
-> A string Y is said to be a (contiguous) substring of X if and only if Y can be obtained by performing the operation below on X zero or more times.  
->   
+> You are given strings S and T consisting of lowercase English letters. Determine whether T is a (contiguous) substring of S.
+> 
+> A string Y is said to be a (contiguous) substring of X if and only if Y can be obtained by performing the operation below on X zero or more times.
+> 
 > Do one of the following.  
 > i) Delete the first character in X.  
 > ii) Delete the last character in X.  
@@ -244,6 +244,43 @@ def solve(S,T):
 S = input()
 T = input()
 solve(S,T)
+```
+
+## Day 9: Bob and Hammer
+
+> **Problem Statement**
+> 
+> Bob is at the origin of a number line. He wants to reach a goal at coordinate X.  
+> There is a wall at coordinate Y, which Bob cannot go beyond at first. However, after picking up a hammer at coordinate Z, he can destroy that wall and pass through.  
+> Determine whether Bob can reach the goal. If he can, find the minimum total distance he needs to travel to do so.
+> 
+> More info: [https://my.newtonschool.co/playground/code/ty3qnc65hz8y](https://my.newtonschool.co/playground/code/ty3qnc65hz8y)
+
+***Solution:***
+
+```python
+# Contributed by : https://github.com/adi271001
+a, b, c = map(int, input().split())
+if(a*b>=0 and a>=0):
+    if b>a:
+        print(a)
+    elif c>b and a>b:
+        print(-1)
+    elif c>b:
+        print(a)
+elif(a*b>=0 and a<=0 and b<=0):
+    if(a>b or (a<b and c<=0 and b<c)):
+        print(abs(a))
+    elif a<b and b<c:
+        print(2*c-a)
+    elif b>a:
+        print(-1)
+elif(a*b<=0 and a>=0):
+    print(a)
+elif(a*b<=0 and c>=0):
+    print(abs(a))
+else:
+    print(-1)
 ```
 
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
