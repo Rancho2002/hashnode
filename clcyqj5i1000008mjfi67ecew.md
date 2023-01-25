@@ -283,4 +283,26 @@ else:
     print(-1)
 ```
 
+## Day 10: Bacterias
+
+> **Problem Statement**
+> 
+> There are A Bacterias.  
+> Each time Jerry shouts, the bacterias multiply by K times.  
+> In order to have B or more slimes, at least how many times does Jerry need to shout?
+> 
+> More info: [https://my.newtonschool.co/playground/code/ssqo8i2d0790](https://my.newtonschool.co/playground/code/ssqo8i2d0790)
+
+***Solution:***
+
+```python
+# Your code here
+a,b,c=map(int,input().split())
+count=0
+while(b>a):
+    a=a*c
+    count+=1
+print(count)
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
