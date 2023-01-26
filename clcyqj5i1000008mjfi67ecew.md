@@ -305,4 +305,33 @@ while(b>a):
 print(count)
 ```
 
+## Day 11: Unlucky Seven
+
+> **Problem Statement**
+> 
+> Mahi hates the number 7.  
+>   
+> We are interested in integers without the digit 7 in both decimal and octal. How many such integers are there between 1 and N (inclusive)?
+> 
+> More info: [https://my.newtonschool.co/playground/code/q3uwdvvrguyb](https://my.newtonschool.co/playground/code/q3uwdvvrguyb)
+
+***Solution:***
+
+```python
+# Your code here
+def solve(n):
+    x=[str(oct(i))[2:] for i in range(1,n+1)]
+    y=[str(i) for i in range(1,n+1)]
+    count=0
+    for i in range (n):
+        if '7' in x[i] or '7' in y[i]:
+            continue 
+        else:
+            count+=1
+    return count
+
+n=int(input())
+print(solve(n))
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
