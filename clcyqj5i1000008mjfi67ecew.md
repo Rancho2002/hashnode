@@ -309,8 +309,8 @@ print(count)
 
 > **Problem Statement**
 > 
-> Mahi hates the number 7.  
->   
+> Mahi hates the number 7.
+> 
 > We are interested in integers without the digit 7 in both decimal and octal. How many such integers are there between 1 and N (inclusive)?
 > 
 > More info: [https://my.newtonschool.co/playground/code/q3uwdvvrguyb](https://my.newtonschool.co/playground/code/q3uwdvvrguyb)
@@ -332,6 +332,23 @@ def solve(n):
 
 n=int(input())
 print(solve(n))
+```
+
+## Day 12: Play with 0's and 2's
+
+> **Problem Statement**
+> 
+> Alexa Loves to play with 0's and 2's. Among the positive integers that consist of 0's and 2's when written in base 10, he wanted to find the Kth smallest integer. Help him find that.
+> 
+> More info: [https://my.newtonschool.co/playground/code/x0xsoz1t9245](https://my.newtonschool.co/playground/code/x0xsoz1t9245)
+
+***Solution:***
+
+```python
+# Your code here
+n=int(input())
+s=str(bin(n))[2:]
+print(s.replace("1","2"))
 ```
 
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
