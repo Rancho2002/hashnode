@@ -351,4 +351,26 @@ s=str(bin(n))[2:]
 print(s.replace("1","2"))
 ```
 
+## Day 13: MEX
+
+> **Problem Statement**
+> 
+> You are given a sequence of length N consisting of integers:  
+> A=(A<sub>1</sub>, A<sub>2</sub>,...., A<sub>N</sub>)  
+> Find the smallest non-negative integer not in (A<sub>1</sub>, A<sub>2</sub>,....,A<sub>N</sub>).
+> 
+> More info: [https://my.newtonschool.co/playground/code/d776qqeu2t6y](https://my.newtonschool.co/playground/code/d776qqeu2t6y)
+
+***Solution:***
+
+```python
+def solve():
+    input()
+    sequence = set(map(int, input().split()))
+    for i in range(2001):
+        if i not in sequence:
+            return i
+print(solve())
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
