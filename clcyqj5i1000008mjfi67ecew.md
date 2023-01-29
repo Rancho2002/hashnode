@@ -373,4 +373,24 @@ def solve():
 print(solve())
 ```
 
+## Day 14: Alexa and Strings
+
+> **Problem Statement**
+> 
+> Alexa loves to play with strings. She is given a string S consisting of lowercase English letters.  
+> If '**a**' appears in S, print the last index at which it appears; otherwise, print −1. (The index starts at 1. )
+> 
+> More info: [https://my.newtonschool.co/playground/code/w4iz1x4fbyd6](https://my.newtonschool.co/playground/code/w4iz1x4fbyd6)
+
+***Solution:***
+
+```python
+# Your code here
+s=list(input())
+s.reverse()
+s="".join(s)
+if "a" in s: print(len(s)-s.index("a"))
+else: print(-1)
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
