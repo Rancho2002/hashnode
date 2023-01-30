@@ -398,14 +398,13 @@ else: print(-1)
 > **Problem Statement**
 > 
 > There was an exam consisting of three problems worth 1, 2, and 4 points.  
-> Alexa, Edward, and Bob took this exam. Alexa scored A points, and Edward scored B points.  
->   
-> Bob solved all of the problems solved by at least one of Alexa and Edward and failed to solve any of the problems solved by, neither of them.  
->   
+> Alexa, Edward, and Bob took this exam. Alexa scored A points, and Edward scored B points.
+> 
+> Bob solved all of the problems solved by at least one of Alexa and Edward and failed to solve any of the problems solved by, neither of them.
+> 
 > Find Bob's score.  
 > It can be proved that Bob's score is uniquely determined under the Constraints of this problem.
 > 
->   
 > More info: [https://my.newtonschool.co/playground/code/h1gqdcep5bod](https://my.newtonschool.co/playground/code/h1gqdcep5bod)
 
 ***Solution:***
