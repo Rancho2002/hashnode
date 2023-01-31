@@ -415,4 +415,25 @@ a,b=map(int,input().split())
 print((a & b) + (a ^ b))
 ```
 
+## Day 16 : Prefix Strings
+
+> **Problem Statement**
+> 
+> You are given two strings S and T consisting of lowercase English letters. Determine if S is a prefix of T.
+> 
+>   
+> More info: [https://my.newtonschool.co/playground/code/9ql82dpeu3qy](https://my.newtonschool.co/playground/code/9ql82dpeu3qy)
+
+***Solution:***
+
+```python
+# Your code here
+def prefix(s,t):
+    if(len(s)<=len(t) and s==t[0:len(s)]): print("Yes")
+    else: print("No")
+s=input()
+t=input()
+prefix(s,t)
+```
+
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
