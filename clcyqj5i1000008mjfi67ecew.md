@@ -421,7 +421,6 @@ print((a & b) + (a ^ b))
 > 
 > You are given two strings S and T consisting of lowercase English letters. Determine if S is a prefix of T.
 > 
->   
 > More info: [https://my.newtonschool.co/playground/code/9ql82dpeu3qy](https://my.newtonschool.co/playground/code/9ql82dpeu3qy)
 
 ***Solution:***
@@ -435,5 +434,9 @@ s=input()
 t=input()
 prefix(s,t)
 ```
+
+&lt;H3&gt;Announcement&lt;/H3&gt;
+
+I stopped posting as this blog is not getting any likes, though after a long dedication. If it reach at least 50 likes from individual, then I will start posting again.
 
 Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
