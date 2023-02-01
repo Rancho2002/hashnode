@@ -438,5 +438,3 @@ prefix(s,t)
 ## Announcement
 
 I stopped posting as this blog is not getting any likes, though after a long dedication. If it reach at least 50 likes from individual, then I will start posting again.
-
-Hope you like my effort, pls make sure you like this blog 😊 and subscribe to my newsletter to get updated regarding 30 days of code :))
