@@ -435,7 +435,7 @@ t=input()
 prefix(s,t)
 ```
 
-&lt;H3&gt;Announcement&lt;/H3&gt;
+## Announcement
 
 I stopped posting as this blog is not getting any likes, though after a long dedication. If it reach at least 50 likes from individual, then I will start posting again.
 
