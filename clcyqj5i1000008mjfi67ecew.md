@@ -435,6 +435,26 @@ t=input()
 prefix(s,t)
 ```
 
+## Day 17: Prefix Strings
+
+> **Problem Statement**
+> 
+> You are given two strings S and T consisting of lowercase English letters. Determine if S is a prefix of T.
+> 
+> **more info :** [https://my.newtonschool.co/playground/code/9ql82dpeu3qy](https://my.newtonschool.co/playground/code/9ql82dpeu3qy)
+
+***Solution:***
+
+```python
+# Your code here
+def prefix(s,t):
+    if(len(s)<=len(t) and s==t[0:len(s)]): print("Yes")
+    else: print("No")
+s=input()
+t=input()
+prefix(s,t)
+```
+
 ## Announcement
 
-I stopped posting as this blog is not getting any likes, though after a long dedication. If it reach at least 50 likes from individual, then I will start posting again.
+Like or its no mean to update this blog. Like target : 50
