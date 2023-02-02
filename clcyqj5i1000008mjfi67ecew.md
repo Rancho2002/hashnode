@@ -439,20 +439,24 @@ prefix(s,t)
 
 > **Problem Statement**
 > 
-> You are given two strings S and T consisting of lowercase English letters. Determine if S is a prefix of T.
+> You are given integers L, R, and a string S consisting of lowercase English letters.  
+> Print this string after reversing (the order of) the L-th through R-th characters.
 > 
-> **more info :** [https://my.newtonschool.co/playground/code/9ql82dpeu3qy](https://my.newtonschool.co/playground/code/9ql82dpeu3qy)
+> **more info :** [https://my.newtonschool.co/playground/code/r798ze6sbgc1](https://my.newtonschool.co/playground/code/r798ze6sbgc1)
 
 ***Solution:***
 
 ```python
 # Your code here
-def prefix(s,t):
-    if(len(s)<=len(t) and s==t[0:len(s)]): print("Yes")
-    else: print("No")
+def rev(s):
+    s=list(s)
+    s.reverse()
+    return "".join(s)
+
+a,b=map(int,input().split())
 s=input()
-t=input()
-prefix(s,t)
+
+print(s[0:a-1]+rev(s[a-1:b])+s[b:])
 ```
 
 ## Announcement
