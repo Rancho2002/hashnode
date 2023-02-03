@@ -435,7 +435,7 @@ t=input()
 prefix(s,t)
 ```
 
-## Day 17: Prefix Strings
+## Day 17: Reverse Strings
 
 > **Problem Statement**
 > 
@@ -457,6 +457,67 @@ a,b=map(int,input().split())
 s=input()
 
 print(s[0:a-1]+rev(s[a-1:b])+s[b:])
+```
+
+## Day 18: Carry or Not?
+
+> **Problem Statement**
+> 
+> You are given positive integers A and B.  
+> Let us calculate A+B (in decimal). If it does not involve a carry, print **Easy**; if it does, print **Hard**.
+> 
+> More info: [https://my.newtonschool.co/playground/code/jbysom98s95s](https://my.newtonschool.co/playground/code/jbysom98s95s)
+
+***Solution:***
+
+```python
+# Your code here
+a,b=map(int,input().split())
+flag=False
+
+while(a):
+    d=a%10
+    e=b%10
+    chk=(d+e)%10
+    if(chk<a%10 and chk<b%10):
+        flag=True
+        break
+    else:
+        a=a//10
+        b=b//10
+print("Hard" if flag else "Easy")
+```
+
+## Day 19: Alexa and Balls
+
+> **Problem Statement**
+> 
+> There is a container with A cyan balls. Alexa will do the following operation as many times as he likes (possibly zero times):  
+> Add B cyan balls and C red balls into the container.  
+> Alexa's objective is to reach a situation where the number of cyan balls in the container is at most D times the number of red balls in it.  
+>   
+> Determine whether the objective is achievable. If it is achievable, find the minimum number of operations needed to achieve it.
+> 
+> More info: [https://my.newtonschool.co/playground/code/jzikdht1iho1](https://my.newtonschool.co/playground/code/jzikdht1iho1)
+
+***Solution:***
+
+```python
+# Your code here
+a, b, c, d = map(int, input().split())
+result = 0
+red = 0
+target = d
+
+if b >= c * d:
+    result = -1
+else:
+    while a > red * d:
+        a = a + b
+        red = red + c
+        result += 1
+
+print(result)
 ```
 
 ## Announcement
