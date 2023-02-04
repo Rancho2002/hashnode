@@ -494,8 +494,8 @@ print("Hard" if flag else "Easy")
 > 
 > There is a container with A cyan balls. Alexa will do the following operation as many times as he likes (possibly zero times):  
 > Add B cyan balls and C red balls into the container.  
-> Alexa's objective is to reach a situation where the number of cyan balls in the container is at most D times the number of red balls in it.  
->   
+> Alexa's objective is to reach a situation where the number of cyan balls in the container is at most D times the number of red balls in it.
+> 
 > Determine whether the objective is achievable. If it is achievable, find the minimum number of operations needed to achieve it.
 > 
 > More info: [https://my.newtonschool.co/playground/code/jzikdht1iho1](https://my.newtonschool.co/playground/code/jzikdht1iho1)
@@ -518,6 +518,36 @@ else:
         result += 1
 
 print(result)
+```
+
+## Day 20: Chipmunk and Nuts
+
+> **Problem Statement**
+> 
+> There are N trees. The i<sup>th</sup> tree bears A<sub>i</sub> nuts. Chipmunk will harvest nuts from the trees in the following manner:  
+> From a tree with 10 or fewer nuts, she does not take nuts.  
+> From a tree with more than 10 nuts, she takes all but 10 nuts.  
+> Find the total number of nuts Chipmunk will take from the trees.
+> 
+> More info: [https://my.newtonschool.co/playground/code/jlc53x5ur1r1](https://my.newtonschool.co/playground/code/jlc53x5ur1r1)
+
+***Solution:***
+
+```c
+#include <stdio.h> // header file for Standard Input Output
+#include <stdlib.h> // header file for Standard Library
+
+int main() {
+    //Your code here
+    int n,a,count=0;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&a);
+        if(a>10) count+=a-10;
+    }
+    printf("%d",count);
+    return 0;
+}
 ```
 
 ## Announcement
