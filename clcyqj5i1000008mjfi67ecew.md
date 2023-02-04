@@ -12,7 +12,7 @@ So what are you waiting for? • Active participants will receive swags such as 
 
 ### Language used
 
-![python](https://skillicons.dev/icons?i=python align="left")
+![python and c](https://skillicons.dev/icons?i=python,c align="left")
 
 ## Day 1 : Mall and Coupons
 
