@@ -550,6 +550,26 @@ int main() {
 }
 ```
 
+## Day 21: Bob and Digits
+
+> **Problem Statement**
+> 
+> Bob loves to play with numbers. He has an integer N. Find the number of digits that N has in base K.
+> 
+> More info: [https://my.newtonschool.co/playground/code/82oyjzel5dss](https://my.newtonschool.co/playground/code/82oyjzel5dss)
+
+***Solution:***
+
+```python
+# Your code here
+a,b=map(int,input().split())
+c=""
+while(a):
+    c+=str(a%b)
+    a=a//b
+print(len(c))
+```
+
 ## Announcement
 
 Like or its no mean to update this blog. Like target : 50
