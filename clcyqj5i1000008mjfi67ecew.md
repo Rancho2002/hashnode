@@ -570,6 +570,56 @@ while(a):
 print(len(c))
 ```
 
+## Day 22: Shifted String
+
+> **Problem Statement**
+> 
+> We have a string S consisting of uppercase English letters. Additionally, an integer N will be given.  
+> Shift each character of S by N in alphabetical order (see below), and print the resulting string.  
+>   
+> We assume that A follows Z. For example, shifting A by 2 results in C (A → B → C), and shifting Y by 3 results in B (Y → Z → A → B).
+> 
+> More info: [https://my.newtonschool.co/playground/code/1ehegpitlyk7](https://my.newtonschool.co/playground/code/1ehegpitlyk7)
+
+***Solution:***
+
+```python
+def shifted_string(n, s):
+  res = ""
+  for char in s:
+    res += chr((ord(char) - ord("A") + n) % 26 + ord("A"))
+  return res
+n = int(input().strip())
+s = input().strip()
+print(shifted_string(n, s))
+```
+
+## Day 23: Cards Shuffle
+
+> **Problem Statement**
+> 
+> We have 4 cards with an integer 1 written on it, 4 cards with 2, …, 4 cards with N, for a total of 4N cards.  
+> Alexa shuffled these cards, removed one of them, and gave you a pile of the remaining 4N−1 cards. The i- th card (1≤i≤4N−1) of the pile has an integer A<sub>i</sub> written on it.  
+>   
+> Find the integer written on the card removed by Alexa.
+> 
+> More info: [https://my.newtonschool.co/playground/code/82sz2hgpfl0l](https://my.newtonschool.co/playground/code/82sz2hgpfl0l)
+
+***Solution:***
+
+```python
+# Your code here
+from collections import Counter
+n=int(input())
+l=list(map(int,input().split()))
+l=Counter(l)
+chk=min(l.values())
+for i in l:
+    if l[i]==chk:
+        print(i)
+        break
+```
+
 ## Announcement
 
 Like or its no mean to update this blog. Like target : 50
