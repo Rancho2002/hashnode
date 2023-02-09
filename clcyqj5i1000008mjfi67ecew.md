@@ -575,8 +575,8 @@ print(len(c))
 > **Problem Statement**
 > 
 > We have a string S consisting of uppercase English letters. Additionally, an integer N will be given.  
-> Shift each character of S by N in alphabetical order (see below), and print the resulting string.  
->   
+> Shift each character of S by N in alphabetical order (see below), and print the resulting string.
+> 
 > We assume that A follows Z. For example, shifting A by 2 results in C (A → B → C), and shifting Y by 3 results in B (Y → Z → A → B).
 > 
 > More info: [https://my.newtonschool.co/playground/code/1ehegpitlyk7](https://my.newtonschool.co/playground/code/1ehegpitlyk7)
@@ -599,8 +599,8 @@ print(shifted_string(n, s))
 > **Problem Statement**
 > 
 > We have 4 cards with an integer 1 written on it, 4 cards with 2, …, 4 cards with N, for a total of 4N cards.  
-> Alexa shuffled these cards, removed one of them, and gave you a pile of the remaining 4N−1 cards. The i- th card (1≤i≤4N−1) of the pile has an integer A<sub>i</sub> written on it.  
->   
+> Alexa shuffled these cards, removed one of them, and gave you a pile of the remaining 4N−1 cards. The i- th card (1≤i≤4N−1) of the pile has an integer A<sub>i</sub> written on it.
+> 
 > Find the integer written on the card removed by Alexa.
 > 
 > More info: [https://my.newtonschool.co/playground/code/82sz2hgpfl0l](https://my.newtonschool.co/playground/code/82sz2hgpfl0l)
@@ -618,6 +618,57 @@ for i in l:
     if l[i]==chk:
         print(i)
         break
+```
+
+## Day 24: String Sequence
+
+> **Problem Statement**
+> 
+> You are given a sequence of 26 integers P=(P<sub>1</sub>, P<sub>2</sub>, …, P<sub>26</sub> ) consisting of integers from 1 through 26. It is guaranteed that all elements in P are distinct.  
+>   
+> Print a string S of length 26 that satisfies the following condition. For every i (1≤i≤26), the i- th character of S is the lowercase English letter that comes P<sub>i</sub>\- th in alphabetical order.
+> 
+> More info: [https://my.newtonschool.co/playground/code/8oovbbhm8v6r](https://my.newtonschool.co/playground/code/8oovbbhm8v6r)
+
+***Solution:***
+
+```python
+# Your code here
+s="abcdefghijklmnopqrstuvwxyz"
+l=list(map(int,input().split()))
+for i in l:
+    print(s[i-1],end="")
+```
+
+## Day 25: Multiple of 3
+
+> **Problem Statement**
+> 
+> Given is a positive integer N, where none of the digits is 0. Let k be the number of digits in N. We want to make a multiple of 3 by erasing at least 0 and at most k−1 digits from N and concatenating the remaining digits without changing the order. Determine whether it is possible to make a multiple of 3 in this way. If it is possible, find the minimum number of digits that must be erased to make such a number.
+> 
+> More info: [https://my.newtonschool.co/playground/code/lqhvuld49hbb](https://my.newtonschool.co/playground/code/lqhvuld49hbb)
+
+***Solution:***
+
+```python
+# Your code here
+def helper(N: int) -> int:
+    if N % 3 == 0:
+        return 0
+    digit = [0 for i in range(10)]
+    sum = 0
+    temp = N
+    while N > 0:
+        sum += N % 10
+        digit[N % 10] += 1
+        N = N // 10
+    for i in range(3):
+        val = sum - (sum // 3) * 3 + 3 * i
+        if val > 0 and val < 10 and digit[val] > 0:
+            return 1
+    return 2 if temp > 100 else -1
+n=int(input())
+print(helper(n))
 ```
 
 ## Announcement
