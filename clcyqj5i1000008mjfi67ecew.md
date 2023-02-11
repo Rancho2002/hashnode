@@ -624,8 +624,8 @@ for i in l:
 
 > **Problem Statement**
 > 
-> You are given a sequence of 26 integers P=(P<sub>1</sub>, P<sub>2</sub>, …, P<sub>26</sub> ) consisting of integers from 1 through 26. It is guaranteed that all elements in P are distinct.  
->   
+> You are given a sequence of 26 integers P=(P<sub>1</sub>, P<sub>2</sub>, …, P<sub>26</sub> ) consisting of integers from 1 through 26. It is guaranteed that all elements in P are distinct.
+> 
 > Print a string S of length 26 that satisfies the following condition. For every i (1≤i≤26), the i- th character of S is the lowercase English letter that comes P<sub>i</sub>\- th in alphabetical order.
 > 
 > More info: [https://my.newtonschool.co/playground/code/8oovbbhm8v6r](https://my.newtonschool.co/playground/code/8oovbbhm8v6r)
@@ -669,6 +669,57 @@ def helper(N: int) -> int:
     return 2 if temp > 100 else -1
 n=int(input())
 print(helper(n))
+```
+
+## Day 26: Maximum Sum Cards
+
+> **Problem Statement**
+> 
+> We have A cards, each of which has an integer 1 written on it. Similarly, we also have B cards with 0s and C cards with −1s.  
+> We will pick up K among these cards. What is the maximum possible sum of the numbers written on the cards chosen?
+> 
+> More info: [https://my.newtonschool.co/playground/code/ph30lk6rqm03](https://my.newtonschool.co/playground/code/ph30lk6rqm03)
+
+***Solution:***
+
+```python
+# Your code here
+A,B,C,K=map(int,input().split())
+if(A>=K):
+    print(K)
+elif(A+B>=K):
+    print(A*1+B*0)
+elif(A+B < K):
+    temp=A+B
+    C=K-temp
+    print(C*-1+A)
+```
+
+## Day 27: Number Games
+
+> **Problem Statement**
+> 
+> You are given an integer N. Do the following operation K times on it and print the resulting integer.  
+> If N is a multiple of 200, divide it by 200. Otherwise, see N as a string and append 200 to the end of it.  
+> For example, 7 would become 7200, and 1234 would become 1234200.
+> 
+> More info: [https://my.newtonschool.co/playground/code/zxv6latneq18](https://my.newtonschool.co/playground/code/zxv6latneq18)
+
+***Solution:***
+
+```python
+# Your code here
+N,K=map(int,input().split())
+
+while(int(K)):
+    if(int(N)%200==0):
+        N=int(N)
+        N=N//200
+    else:
+        N=str(N)
+        N=N+"200"
+    K-=1
+print(N)
 ```
 
 ## Announcement
