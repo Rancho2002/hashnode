@@ -722,6 +722,68 @@ while(int(K)):
 print(N)
 ```
 
+## Day 28: Minimum Replacements
+
+> **Problem Statement**
+> 
+> Given are two strings S and T.  
+> Let us change some of the characters in S so that T will be a substring of S.  
+> At least how many characters do we need to change?  
+>   
+> Here, a substring is a consecutive subsequence. For example, xxx is a substring of yxxxy, but not a substring of xxyxx.
+> 
+> More info: [https://my.newtonschool.co/playground/code/tt3o4680uerq](https://my.newtonschool.co/playground/code/tt3o4680uerq)
+
+***Solution:***
+
+```python
+s = input()
+t = input()
+ans = float("inf")
+
+for i in range(len(s) - len(t) + 1):
+    cnt = 0
+    for j in range(len(t)):
+        if t[j] != s[i + j]:
+            cnt += 1
+    ans = min(ans, cnt)
+
+print(ans)
+```
+
+## Day 29: Maximise Product
+
+> **Problem Statement**
+> 
+> Given are integers a, b, c, and d. If x and y are integers and a≤x≤b and c≤y≤d hold, what is the maximum possible value of x\*y?
+> 
+>   
+> More info: [https://my.newtonschool.co/playground/code/1wjwkotkn9me](https://my.newtonschool.co/playground/code/1wjwkotkn9me)
+
+***Solution:***
+
+```python
+# Your code here
+a1,a2,b1,b2=map(int,input().split())
+print(max(a1*b1,a1*b2,a2*b1,a2*b2))
+```
+
+## Day 30: Alexa and Digits
+
+> **Problem Statement**
+> 
+> Having learned the multiplication table, Alexa can multiply two integers between 1 and 9 (inclusive) together. Given an integer N, determine whether N can be represented as the product of two integers between 1 and 9. If it can, print Yes; if it cannot, print No.
+> 
+> More info: [https://my.newtonschool.co/playground/code/lzos5txr7zqv](https://my.newtonschool.co/playground/code/lzos5txr7zqv)
+
+***Solution:***
+
+```python
+# Your code here
+n = int(input())
+print("Yes" if any(n%i==0 and 1<=n//i<=9 for i in range(1,10)) else "No")
+```
+
 ## Announcement
 
-Like or its no mean to update this blog. Like target : 50
+Like to appreciate my effort 😊. Like target : 50
